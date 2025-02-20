@@ -19,6 +19,7 @@ def mark_done():
     try:
         task_index = listbox_tasks.curselection()[0]
         task = listbox_tasks.get(task_index)
+        
         if task.startswith("✅ "):
             listbox_tasks.delete(task_index)
             listbox_tasks.insert(task_index, task[2:])
