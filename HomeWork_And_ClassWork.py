@@ -40,14 +40,14 @@ conn = sqlite3.connect('my_favorites.db')
 cursor = conn.cursor()
 
 cursor.execute(f'''
-    CREATE TABLE IF NOT EXISTS favorites (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        title TEXT,
-        genre TEXT,
-        release_year INTEGER,
-        rating REAL,
-        comments TEXT
-    )
+CREATE TABLE IF NOT EXISTS favorites (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    genre TEXT,
+    release_year INTEGER,
+    rating REAL,
+    comments TEXT
+)
 ''')
 
 title1 = 'Інтерстеллар'
