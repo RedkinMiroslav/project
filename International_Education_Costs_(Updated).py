@@ -34,6 +34,16 @@ plt.ylabel('Рівень освіти', fontsize=12)
 plt.tight_layout()
 plt.show()
 
+# --- Кругова діаграма розподілу студентів за рівнем освіти --- #
+level_distribution = data['Level'].value_counts()
+
+plt.figure(figsize=(8, 8))
+level_distribution.plot(kind='pie', autopct='%1.1f%%', colors=['#ff9999','#66b3ff','#99ff99','#ffcc99'])
+plt.title('Розподіл студентів за рівнем освіти', fontsize=14)
+plt.ylabel('')  # Прибираємо підпис осі Y
+plt.tight_layout()
+plt.show()
+
 # --- Топ-10 університетів за вартістю навчання --- #
 top_10_universities = (
     data.groupby('University')['Tuition_USD']
