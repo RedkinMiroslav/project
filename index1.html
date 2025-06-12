@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер одиниць</title>
+    <link rel="stylesheet" href="../static/style1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Конвертер одиниць</h2>
+        <form method="post">
+            <input type="number" name="value" placeholder="Введи число" required step="any">
+            <select name="from_unit">
+                <option value="g">Грами</option>
+                <option value="kg">Кілограми</option>
+                <option value="mg">Міліграми</option>
+                <option value="lb">Фунти</option>
+                <option value="ml">Мілілітри</option>
+                <option value="l">Літри</option>
+                <option value="gal">Галони</option>
+                <option value="oz">Унції</option>
+            </select>
+
+            <select name="to_unit">
+                <option value="g">Грами</option>
+                <option value="kg">Кілограми</option>
+                <option value="mg">Міліграми</option>
+                <option value="lb">Фунти</option>
+                <option value="ml">Мілілітри</option>
+                <option value="l">Літри</option>
+                <option value="gal">Галони</option>
+                <option value="oz">Унції</option>
+            </select>
+
+            <button type="submit">Конвертувати</button>
+        </form>
+        <a href="{{ url_for('more_info') }}" target="_blank">
+            <button type="button">Дізнатися більше</button>
+        </a>
+        {% if result is not none %}
+        <h3>Результат: {{ result }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
