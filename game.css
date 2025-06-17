@@ -1,0 +1,125 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: #333;
+}
+#counter{
+    font-size: 2em;
+    margin: 20px;
+}
+button{
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #45a049;
+}body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: #333;
+}
+
+#counter{
+    font-size: 2em;
+    margin: 20px;
+}
+
+button{
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+#level-info {
+    background-color: #e8f5e8;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+#current-level {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2e7d2e;
+    margin-bottom: 5px;
+}
+
+#level-name {
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#level-description {
+    font-size: 1em;
+    color: #666;
+}
+
+#progress-container {
+    background-color: #ddd;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+#progress-bar {
+    background-color: #4CAF50;
+    height: 20px;
+    border-radius: 20px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+#progress-text {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+}
+
+#level-up-message {
+    background-color: #FFD700;
+    color: #333;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 2px solid #FFA500;
+    animation: levelUp 0.5s ease;
+}
+
+@keyframes levelUp {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
