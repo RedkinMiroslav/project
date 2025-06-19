@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaLcuLaToR</title>
+    <link rel="stylesheet" href="../static/KaLcuLaToR.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Калькулятор</h2>
+        <form method="POST">
+            <input type="number" name="num1" placeholder="Введіть перше число" required>
+            <input type="number" name="num2" placeholder="Введіть друге число" required>
+            <select name="operation">
+                <option value="add">Додавання</option>
+                <option value="subtract">Віднімання</option>
+                <option value="multiply">Множення</option>
+                <option value="divide">Ділення</option>
+            </select>
+            <button type="submit">Обчислити</button>
+        </form>
+        <div class="result">
+            {% if last_result is not none %}
+                Останній результат: {{ last_result }}
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
